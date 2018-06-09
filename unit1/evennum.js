@@ -7,3 +7,11 @@ for (i=0; i <= numbers.length; i++){
         console.log(numbers[i]);
     }
 }
+
+//Even Numbers
+
+for (i=0; i <= numbers.length; i++){
+    if (numbers[i] % 2 === 1){
+        console.log(numbers[i]);
+    }
+}
