@@ -9,6 +9,21 @@
 // 3. If the number is divisible by both 3 and 5, print out 'FizzBuzz' instead of the number.
 // 4. Otherwise, print the number.
 
+// for (i=1; i <= 30; i++) {
+//   console.log(i);
+
+// }
+
+
 for (i=1; i <= 30; i++) {
-  console.log(i);
+  //console.log(i);
+  if ([i] % 3 === 0 && [i] % 5 === 0){
+    console.log("FizzBuzz")
+  } else if ([i] % 3 === 0) {
+    console.log("Fizz")
+  } else if ([i] % 5 === 0){
+    console.log("Buzz");
+  } else {
+    console.log([i]);
+  }
 }
