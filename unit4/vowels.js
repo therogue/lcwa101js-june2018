@@ -8,6 +8,7 @@ function numVowels(string){
     for(i = 0; i <= wordsplit.length; i++){
             if (vowels.indexOf(wordsplit[i]) != -1) {
                 count += 1;
+                //what if I wanted to capture what word it matched or found?
               }
     }
     return count

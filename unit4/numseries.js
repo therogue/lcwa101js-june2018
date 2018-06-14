@@ -11,9 +11,11 @@ console.log(numSeries(2));  // 1 2
 
 
 function numSeries(n){
-    var number = 0;
-    (for i = 0; i <= n; i++){
-
+    var string = n.toString()
+    var sum = 0;
+    for (i = 0; i < string; i++) {
+                sum++;
+                console.log(sum);
     }
 }
-
+console.log(numSeries(12));
