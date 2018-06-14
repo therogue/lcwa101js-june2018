@@ -2,7 +2,11 @@
 // The program should contain a function with a for loop that adds up the numbers.
 // The function should take an int parameter n and return the sum of the first n numbers.
 
+
+
 function sum(n){
+
+    
     var n = 0;
     for (i = 1; i <= 10; i++){
         n = n + i;
