@@ -9,13 +9,23 @@ console.log(numSeries(6));  // 1 2 3 4 5 6
 console.log(numSeries(5));  // 1 2 3 4 5
 console.log(numSeries(2));  // 1 2
 
+//1. If number is A cont everything
+//2. If number is B :
+//cont out the first three numbers (123)
+//cont out remaining numbers with ...
+//cont out remaining numbers with n
 
-function numSeries(n){
-    var string = n.toString()
-    var sum = 0;
-    for (i = 0; i < string; i++) {
-                sum++;
-                console.log(sum);
+
+function numSeries(n) {
+    var seriesString = '';
+    if (n <= 6) {
+        for (i = 1; i < n; i++) {
+        seriesString += `${i} `;
+        }
+    } else {
+        seriesString += `1 2 3 ... `;
     }
+    seriesString += `${n}`
+    return seriesString //value
 }
 console.log(numSeries(12));

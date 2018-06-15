@@ -6,9 +6,11 @@ function numVowels(string){
     var count = 0;
 
     for(i = 0; i <= wordsplit.length; i++){
-            if (vowels.indexOf(wordsplit[i]) != -1) {
+            var match = vowels.indexOf(wordsplit[i]);
+            if (match != -1) {
                 count += 1;
                 //what if I wanted to capture what word it matched or found?
+                console.log(`Found an ${vowels[match]} in ${string}`);
               }
     }
     return count
